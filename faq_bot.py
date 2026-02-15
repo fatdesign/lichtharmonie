@@ -4,7 +4,7 @@ from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, Messa
 
 # --- KONFIGURATION ------------------------
 # Hier deinen neuen Bot-Token einfügen:
-BOT_TOKEN = "8295614352:AAGQ-NyPs08aaUqBo20X_D6SyVCLvzn0moQ" 
+BOT_TOKEN = "xxxx" 
 # ------------------------------------------
 
 logging.basicConfig(
@@ -397,3 +397,4 @@ if __name__ == '__main__':
     
     print("🤖 Bot ist gestartet und wartet auf Nachrichten...")
     application.run_polling()
+
