@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioenergie & Aura | LICHTHARMONIE by Aksu</title>
+    <meta name="description"
+        content="Energetische Reinigung und Bio-Lifting bei LICHTHARMONIE. Bringen Sie Ihre Lebensenergie zum Fließen.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Bioenergie & Aura-Reinigung | LICHTHARMONIE by Aksu">
+    <meta property="og:description"
+        content="Bringe deine Chakren ins Gleichgewicht und stärke deine Aura mit professioneller Bioenergie-Arbeit.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/bioenergie.jpg"> <!-- Placeholder -->
+    <meta property="og:url" content="https://lichtharmonie.at/bioenergie.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; left: -100px;"></div>
+    <div class="soul-bg-blob"
+        style="top: 20%; right: -200px; background: radial-gradient(circle, rgba(157,125,101,0.08) 0%, transparent 70%);">
+    </div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a></li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero glass-hero" style="min-height: 70vh; padding-top: 150px;">
+            <div class="container scale-up">
+                <div class="glass flex soft-tilt about-card">
+                    <div class="about-image" style="background-image: url('image/theta 3.jpeg');">
+                    </div>
+                    <div style="flex: 1; padding: var(--space-lg);">
+                        <h1 style="font-size: var(--h1-size); line-height: 1.1; margin-bottom: 30px;">
+                            Bioenergie & <br><span style="color: var(--primary);">Aura-Balance</span>
+                        </h1>
+                        <p style="font-size: 1.3rem; margin-bottom: 40px; color: var(--text-muted);">
+                            Reinigen Sie Ihr energetisches Feld. Lösen Sie Blockaden und tanken Sie neue Lebenskraft für
+                            Ihren Alltag.
+                        </p>
+                        <a href="#details" class="btn btn-primary">Unsere Ansätze</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section id="details" class="section">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-sun"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Energie-Zentren</h3>
+                        <p>Wir arbeiten an den Hauptenergiepunkten Ihres Körpers, um den natürlichen Energiefluss
+                            wiederherzustellen und zu harmonisieren.</p>
+                    </div>
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-magic"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Aura-Reinigung</h3>
+                        <p>Befreien Sie sich von fremden Energien und negativen Einflüssen. Stärken Sie Ihren Schutzraum
+                            und
+                            Ihre Ausstrahlung.</p>
+                    </div>
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-hands-holding"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Bio-Lifting</h3>
+                        <p>Die Aktivierung der Zellenergie sorgt nicht nur für inneres Wohlbefinden, sondern spiegelt
+                            sich
+                            auch in einer frischen, vitalen Haut wider.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Insights: Körper & Geist im Einklang -->
+        <section id="expert-insights" class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <h2 class="reveal">Expert Insights: <span style="color: var(--primary);">Körper & Geist im
+                            Einklang</span></h2>
+                    <p style="color: var(--text-muted); max-width: 700px; margin: 20px auto;">Verstehe die Kraft deiner
+                        Bioenergie und wie sie dein Wohlbefinden steuert.</p>
+                </div>
+
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                    <!-- Das Konzept -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-microchip"
+                                style="margin-right: 15px; color: var(--primary);"></i>Das Bio-Konzept</h3>
+                        <p style="margin-bottom: 20px;">Psychische Konflikte manifestieren sich oft als körperliche
+                            Blockaden. Bioenergiearbeit hilft dabei, diese "muskuläre Panzerung" sanft zu lösen.</p>
+                        <div
+                            style="background: rgba(157,125,101,0.05); padding: 15px; border-radius: 12px; font-size: 0.9rem;">
+                            <i class="fas fa-link" style="color: var(--primary); margin-right: 10px;"></i>
+                            <span>Die Einheit von Körper und Seele wiederherstellen.</span>
+                        </div>
+                    </div>
+
+                    <!-- Wirkung -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-magic"
+                                style="margin-right: 15px; color: var(--primary);"></i>Bio-Lifting Effekt</h3>
+                        <p style="margin-bottom: 15px;">Die Aktivierung der Zellenergie wirkt wie ein natürliches
+                            Lifting:
+                        </p>
+                        <ul style="list-style: none; padding: 0; font-size: 0.95rem;">
+                            <li style="margin-bottom: 10px;"><i class="fas fa-bolt-lightning"
+                                    style="color: var(--primary); margin-right: 10px; font-size: 0.7rem;"></i>Frischeres,
+                                vitaleres Hautbild</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-bolt-lightning"
+                                    style="color: var(--primary); margin-right: 10px; font-size: 0.7rem;"></i>Erhöhte
+                                Ausstrahlung & Charisma</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-bolt-lightning"
+                                    style="color: var(--primary); margin-right: 10px; font-size: 0.7rem;"></i>Tiefe
+                                innere
+                                Regeneration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Schutzraum -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-shield-halved"
+                                style="margin-right: 15px; color: var(--primary);"></i>Aura-Reinigung</h3>
+                        <p style="margin-bottom: 15px;">Befreie dein Feld von negativen Einflüssen und stärke deinen
+                            energetischen Schutzraum für den Alltag.</p>
+                        <div
+                            style="margin-top: 20px; padding: 10px; border-left: 3px solid var(--primary); font-style: italic; font-size: 0.9rem;">
+                            "Dein Energiefeld ist der Spiegel deiner Gesundheit."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section reveal">
+            <div class="container">
+                <div class="glass" style="padding: var(--space-lg); text-align: center;">
+                    <h2>Bringen Sie Ihr Licht zum Strahlen</h2>
+                    <p style="max-width: 600px; margin: 30px auto; font-size: 1.2rem; color: var(--text-muted);">Erleben
+                        Sie
+                        die vitalisierende Kraft der Bioenergiearbeit.</p>
+                    <a href="index.html#booking" class="btn btn-primary">Termin anfragen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Re-refined Footer -->
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container" style="text-align: center;">
+
+
+            <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31 21</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                    info@lichtharmonie.at</p>
+            </div>
+
+            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+                <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="impressum.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+                <a href="agb.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB &
+                    Datenschutz</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy; 2026
+                LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+                <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                    Handcrafted by
+                    <a href="https://www.fatdesign.at"
+                        style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                        Klavun</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Butterfly Cursor Follower -->
+    <div id="butterfly-follower">
+        <svg viewBox="0 0 100 100">
+            <g class="wing-left">
+                <path d="M50 50 C20 20 10 40 10 50 C10 60 20 80 50 50" />
+                <path d="M50 50 C30 40 25 55 50 50" />
+            </g>
+            <g class="wing-right">
+                <path d="M50 50 C80 20 90 40 90 50 C90 60 80 80 50 50" />
+                <path d="M50 50 C70 40 75 55 50 50" />
+            </g>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

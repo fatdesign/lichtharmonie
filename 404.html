@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Seite nicht gefunden | LICHTHARMONIE by Aksu</title>
+    <meta name="robots" content="noindex, follow">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+    <div id="glitterCanvas"></div>
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+        <button class="mobile-menu-close-floating" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <main id="main-content"
+        style="height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <section class="section">
+            <div class="container">
+                <div class="glass" style="padding: var(--space-xl); display: inline-block;">
+                    <i class="fas fa-compass"
+                        style="font-size: 4rem; color: var(--primary); margin-bottom: 20px; opacity: 0.8;"></i>
+                    <h1 style="margin-bottom: 20px; font-size: clamp(2rem, 5vw, 4rem);">404</h1>
+                    <h2 style="font-family: 'Outfit', sans-serif; font-weight: 300; margin-bottom: 30px;">
+                        Hier fließt keine Energie...
+                    </h2>
+                    <p style="margin-bottom: 40px; color: var(--text-muted);">
+                        Die gesuchte Seite hat sich aufgelöst oder existiert nicht.<br>
+                        Kehren Sie zurück zur Harmonie.
+                    </p>
+                    <a href="index.html" class="btn btn-primary">
+                        Zurück zur Startseite <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laserhaarentfernung | LICHTHARMONIE by Aksu</title>
+    <meta name="description"
+        content="Hocheffiziente Diodenlaser-Haarentfernung bei LICHTHARMONIE. Schmerzarm, sicher und dauerhaft für seidig glatte Haut.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Dauerhafte Laserhaarentfernung | LICHTHARMONIE by Aksu">
+    <meta property="og:description"
+        content="Sanfte und effektive Haarentfernung mit modernster Diodenlaser-Technologie. Schmerzfrei zu seidig glatter Haut.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/laser-treatment.jpg"> <!-- Placeholder -->
+    <meta property="og:url" content="https://lichtharmonie.at/laser.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; left: -100px;"></div>
+    <div class="soul-bg-blob"
+        style="top: 20%; right: -200px; background: radial-gradient(circle, rgba(157,125,101,0.08) 0%, transparent 70%);">
+    </div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a></li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero glass-hero" style="min-height: 70vh; padding-top: 150px;">
+            <div class="container scale-up">
+                <div class="glass flex soft-tilt about-card">
+                    <div class="about-image" style="background-image: url('image/hair 1.jpeg');">
+                    </div>
+                    <div style="flex: 1; padding: var(--space-lg);">
+                        <h1 style="font-size: var(--h1-size); line-height: 1.1; margin-bottom: 30px;">
+                            High-End <br><span style="color: var(--primary);">Diodenlaser</span>
+                        </h1>
+                        <p style="font-size: 1.3rem; margin-bottom: 40px; color: var(--text-muted);">
+                            Die Revolution der dauerhaften Haarentfernung. Schmerzarm, hocheffizient und für jeden
+                            Hauttyp
+                            geeignet.
+                        </p>
+                        <a href="#details" class="btn btn-primary">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section id="details" class="section">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-check-circle"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Präzision</h3>
+                        <p>Unser Diodenlaser arbeitet mit einer exakten Wellenlänge, die direkt die Haarwurzel erreicht,
+                            ohne das umliegende Gewebe zu belasten.</p>
+                    </div>
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-shield-alt"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Sicherheit</h3>
+                        <p>Dank modernster Kühlung ist die Behandlung besonders sanft und sicher. Wir erfüllen höchste
+                            medizinische Standards.</p>
+                    </div>
+                    <div class="glass reveal" style="padding: 40px;">
+                        <i class="fas fa-calendar-check"
+                            style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; display: block;"></i>
+                        <h3>Effizienz</h3>
+                        <p>Für ein perfektes, dauerhaftes Ergebnis empfehlen wir 6-10 Sitzungen. Sichtbare Ergebnisse
+                            oft
+                            schon nach kurzer Zeit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Insights: Dein Weg zu seidiger Haut -->
+        <section id="expert-insights" class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <h2 class="reveal">Expert Insights: <span style="color: var(--primary);">Dein Weg zu seidiger
+                            Haut</span></h2>
+                    <p style="color: var(--text-muted); max-width: 700px; margin: 20px auto;">Alles, was du für ein
+                        perfektes und sicheres Ergebnis wissen musst.</p>
+                </div>
+
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                    <!-- Vorbereitung -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-clipboard-list"
+                                style="margin-right: 15px; color: var(--primary);"></i>Die Vorbereitung</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-check"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>24h vorher rasieren:</strong> Bitte die Zone sanft rasieren (kein
+                                    Wachsen/Epilieren).</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-check"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>Produkte weglassen:</strong> Keine Cremes, Deos oder Make-up am
+                                    Behandlungstag.</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-check"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>Sonnenschutz:</strong> 2-4 Wochen vorher intensive Sonne und Solarium
+                                    meiden.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Während der Behandlung -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-bolt-lightning"
+                                style="margin-right: 15px; color: var(--primary);"></i>Der Ablauf</h3>
+                        <p style="margin-bottom: 20px;">Ein modernes Kühlsystem schützt deine Haut. Du spürst nur ein
+                            leichtes Kribbeln – deutlich angenehmer als Wachsen.</p>
+                        <div style="background: rgba(157,125,101,0.05); padding: 20px; border-radius: 12px;">
+                            <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>Dauer pro Sitzung:</strong></p>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.85rem; opacity: 0.8;">
+                                <span>Kleine Zonen:</span> <span>5-15 Min.</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.85rem; opacity: 0.8;">
+                                <span>Beine/Rücken:</span> <span>30-60 Min.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nachsorge -->
+                    <div class="glass reveal" style="padding: 40px;">
+                        <h3 style="margin-bottom: 25px;"><i class="fas fa-leaf"
+                                style="margin-right: 15px; color: var(--primary);"></i>Die Nachsorge</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-heart"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>Hautpflege:</strong> Sanftes Aloe Vera Gel beruhigt die Haut
+                                    sofort.</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-heart"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>Auszeit für die Haut:</strong> 48h kein Sport, keine Sauna oder heiße
+                                    Bäder.</span>
+                            </li>
+                            <li style="margin-bottom: 15px; display: flex; align-items: flex-start;">
+                                <i class="fas fa-heart"
+                                    style="color: var(--primary); margin-top: 5px; margin-right: 12px; font-size: 0.8rem;"></i>
+                                <span><strong>Sonne meiden:</strong> Mindestens 2 Wochen lang hohen SPF (30+)
+                                    verwenden.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section reveal">
+            <div class="container">
+                <div class="glass" style="padding: var(--space-lg); text-align: center;">
+                    <h2>Bereit für seidig glatte Haut?</h2>
+                    <p style="max-width: 600px; margin: 30px auto; font-size: 1.2rem; color: var(--text-muted);">Sichern
+                        Sie
+                        sich jetzt Ihren Beratungstermin und genießen Sie das Gefühl von Freiheit.</p>
+                    <a href="index.html#booking" class="btn btn-primary">Termin anfragen</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Re-refined Footer -->
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container" style="text-align: center;">
+
+
+            <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31 21</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                    info@lichtharmonie.at</p>
+            </div>
+
+            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+                <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="impressum.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+                <a href="agb.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB &
+                    Datenschutz</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy; 2026
+                LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+                <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                    Handcrafted by <a href="https://www.fatdesign.at"
+                        style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                        Klavun</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Butterfly Cursor Follower -->
+    <div id="butterfly-follower">
+        <svg viewBox="0 0 100 100">
+            <g class="wing-left">
+                <path d="M50 50 C20 20 10 40 10 50 C10 60 20 80 50 50" />
+                <path d="M50 50 C30 40 25 55 50 50" />
+            </g>
+            <g class="wing-right">
+                <path d="M50 50 C80 20 90 40 90 50 C90 60 80 80 50 50" />
+                <path d="M50 50 C70 40 75 55 50 50" />
+            </g>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

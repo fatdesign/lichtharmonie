@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed | LICHTHARMONIE by Aksu</title>
+    <meta name="description" content="Folgen Sie LICHTHARMONIE auf Instagram für tägliche Inspiration.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Social Media | LICHTHARMONIE by Aksu">
+    <meta property="og:description"
+        content="Folge uns auf Instagram und Telegram für tägliche Inspiration und Angebote.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/social.jpg"> <!-- Placeholder -->
+    <meta property="og:url" content="https://lichtharmonie.at/social.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; right: -100px;"></div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a></li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main id="main-content">
+        <!-- Instagram Feed Section -->
+        <section class="section">
+            <div class="container" style="padding-top: 100px;">
+                <div style="text-align: center; margin-bottom: 50px;">
+                    <h1 class="social-handle" style="font-size: 3rem; margin-bottom: 10px;">@lichtharmonie_byaksu</h1>
+                    <p style="color: var(--text-muted);">Inspiration für Körper, Geist und Seele.</p>
+                    <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" class="btn btn-primary"
+                        style="margin-top: 20px;">
+                        <i class="fab fa-instagram"></i> Folgen
+                    </a>
+                </div>
+
+                <!-- Static Instagram Grid -->
+                <div id="instagramGrid" class="bento-grid"
+                    style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/hair 1.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/theta 1.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/hair 2.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/theta 2.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/hair 3.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="glass" style="padding: 0; overflow: hidden; height: 350px;">
+                        <img src="image/theta 3.jpeg" class="service-img" style="height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Re-refined Footer -->
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container" style="text-align: center;">
+
+
+            <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31 21</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                    info@lichtharmonie.at</p>
+            </div>
+
+            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+                <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="impressum.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+                <a href="agb.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB &
+                    Datenschutz</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy; 2026
+                LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+                <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                    Handcrafted by <a href="https://www.fatdesign.at"
+                        style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                        Klavun</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

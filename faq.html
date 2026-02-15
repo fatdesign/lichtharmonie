@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Häufig gestellte Fragen | LICHTHARMONIE by Aksu</title>
+    <meta name="description"
+        content="Häufig gestellte Fragen zu Theta Healing und Laserhaarentfernung. Alle Informationen zu Vorbereitung, Ablauf, Risiken und Nachsorge.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Häufige Fragen (FAQ) | LICHTHARMONIE by Aksu">
+    <meta property="og:description"
+        content="Antworten auf deine Fragen zu Laserhaarentfernung, Theta Healing und Bioenergie.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/faq.jpg"> <!-- Placeholder -->
+    <meta property="og:url" content="https://lichtharmonie.at/faq.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; left: -100px;"></div>
+    <div class="soul-bg-blob"
+        style="top: 40%; right: -200px; background: radial-gradient(circle, rgba(44,62,80,0.05) 0%, transparent 70%);">
+    </div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a></li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- FAQ Content -->
+        <section class="section" style="padding-top: 120px;">
+            <div class="faq-container">
+                <div class="faq-header scale-up">
+                    <h1>Häufig gestellte Fragen</h1>
+                    <p>Hier finden Sie alle wichtigen Informationen zu unseren Services. Klicken Sie auf eine Frage, um
+                        die
+                        Antwort zu sehen.</p>
+                </div>
+
+                <!-- LASERHAARENTFERNUNG FAQ -->
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <span class="faq-category-icon">✨</span>
+                        Laserhaarentfernung
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was muss ich vor dem Termin beachten?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Eine gute Vorbereitung ist entscheidend für optimale Ergebnisse:</p>
+                            <h4>📋 24-48 Stunden vorher:</h4>
+                            <ul>
+                                <li><strong>Rasieren Sie den Behandlungsbereich</strong> (NICHT wachsen oder epilieren!)
+                                </li>
+                                <li>Die Haare sollten kurz sein, damit der Laser die Haarwurzel optimal erreichen kann
+                                </li>
+                            </ul>
+                            <h4>☀️ 2-4 Wochen vorher:</h4>
+                            <ul>
+                                <li>Keine Sonnenexposition, kein Solarium, keine Selbstbräuner</li>
+                                <li>Gebräunte Haut erhöht das Risiko von Verbrennungen und Pigmentveränderungen</li>
+                                <li>Verwenden Sie täglich Sonnenschutz (SPF 30+) auf exponierten Bereichen</li>
+                            </ul>
+                            <h4>🧴 Am Behandlungstag:</h4>
+                            <ul>
+                                <li>Keine Cremes, Make-up, Deo oder Lotionen auf der Haut</li>
+                                <li>Die Haut sollte sauber und frei von Produkten sein</li>
+                            </ul>
+                            <h4>❌ 4-6 Wochen vorher:</h4>
+                            <ul>
+                                <li>Kein Wachsen, Zupfen oder Enthaarungscremes verwenden</li>
+                                <li>Diese Methoden entfernen die Haarwurzel, die der Laser benötigt</li>
+                            </ul>
+                            <div class="warning-box">
+                                <p>💊 <strong>Wichtig:</strong> Teilen Sie uns mit, ob Sie lichtempfindliche Medikamente
+                                    einnehmen (z.B. bestimmte Antibiotika, Akne-Medikamente)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Wie lange dauert eine Sitzung?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die Dauer variiert je nach Größe des zu behandelnden Bereichs:</p>
+                            <div class="highlight-box">
+                                <h4>⚡ Kleine Bereiche (5-15 Minuten):</h4>
+                                <ul>
+                                    <li>Oberlippe</li>
+                                    <li>Kinn</li>
+                                    <li>Achseln</li>
+                                    <li>Areolas (Brustwarzenbereich)</li>
+                                </ul>
+                            </div>
+                            <div class="highlight-box">
+                                <h4>⚡ Mittere Bereiche (15-30 Minuten):</h4>
+                                <ul>
+                                    <li>Bikinizone</li>
+                                    <li>Brazilian</li>
+                                    <li>Unterarme</li>
+                                    <li>Unterschenkel</li>
+                                    <li>Gesicht komplett</li>
+                                    <li>Nacken</li>
+                                </ul>
+                            </div>
+                            <div class="highlight-box">
+                                <h4>⚡ Große Bereiche (30-90 Minuten):</h4>
+                                <ul>
+                                    <li>Beine komplett</li>
+                                    <li>Rücken</li>
+                                    <li>Brust</li>
+                                    <li>Abdomen</li>
+                                </ul>
+                            </div>
+                            <div class="success-box">
+                                <p><strong>⚡ Ganzkörper-Behandlung:</strong> Über 60 Minuten, abhängig von der
+                                    Körpergröße und Haardichte</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Gibt es Risiken oder Nebenwirkungen?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="success-box">
+                                <p><strong>✅ Generell sehr sicher bei professioneller Anwendung!</strong></p>
+                                <p>Unsere modernen Diodenlaser sind für alle Hauttypen geeignet und werden von
+                                    geschultem Personal bedient.</p>
+                            </div>
+                            <h4>Mögliche temporäre Nebenwirkungen:</h4>
+                            <ul>
+                                <li><strong>Häufig:</strong> Leichte Rötung und Schwellung (verschwindet nach wenigen
+                                    Stunden)</li>
+                                <li><strong>Selten:</strong> Vorübergehende Pigmentveränderungen (meist temporär, können
+                                    einige Wochen bis Monate andauern)</li>
+                                <li><strong>Sehr selten:</strong> Blasenbildung bei falscher Anwendung oder zu hoher
+                                    Energieeinstellung</li>
+                            </ul>
+                            <div class="warning-box">
+                                <p><strong>⚠️ WICHTIG:</strong> Professionelle Behandlung mit korrekten Einstellungen
+                                    minimiert alle Risiken erheblich! Wir passen die Laser-Einstellungen individuell an
+                                    Ihren Hauttyp und Ihre Haarfarbe an.</p>
+                            </div>
+                            <h4>Risikofaktoren:</h4>
+                            <ul>
+                                <li>Gebräunte Haut erhöht das Risiko von Pigmentveränderungen</li>
+                                <li>Sehr dunkle Hauttypen benötigen spezielle Einstellungen</li>
+                                <li>Lichtempfindliche Medikamente können die Hautreaktion verstärken</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was muss ich nach der Behandlung beachten?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die richtige Nachsorge ist entscheidend für optimale Ergebnisse und minimale
+                                Nebenwirkungen:</p>
+                            <h4>❄️ Sofort nach der Behandlung:</h4>
+                            <ul>
+                                <li>Kühle Kompressen oder Eispacks auflegen (reduziert Rötung und Schwellung)</li>
+                                <li>Aloe Vera Gel oder milde Feuchtigkeitscreme verwenden</li>
+                            </ul>
+                            <div class="warning-box">
+                                <h4>☀️ Sonnenschutz (2 Wochen lang):</h4>
+                                <ul>
+                                    <li><strong>Keine direkte Sonne!</strong> Vermeiden Sie Sonnenbäder und Solarium
+                                    </li>
+                                    <li>Verwenden Sie täglich Sonnenschutz (SPF 30+)</li>
+                                    <li>Tragen Sie schützende Kleidung über behandelten Bereichen</li>
+                                </ul>
+                            </div>
+                            <h4>🏃‍♀️ 24-72 Stunden nach der Behandlung:</h4>
+                            <ul>
+                                <li>Keine Sauna, heißen Bäder oder Dampfbäder</li>
+                                <li>Kein Sport oder Aktivitäten, die starkes Schwitzen verursachen</li>
+                                <li>Keine heißen Duschen (lauwarm ist in Ordnung)</li>
+                            </ul>
+                            <h4>👕 Kleidung:</h4>
+                            <ul>
+                                <li>Lockere, atmungsaktive Kleidung tragen</li>
+                                <li>Vermeiden Sie enge Kleidung, die an der behandelten Haut reibt</li>
+                            </ul>
+                            <h4>🚫 48 Stunden vermeiden:</h4>
+                            <ul>
+                                <li>Parfümierte Produkte, Peelings oder aggressive Reinigungsmittel</li>
+                                <li>Make-up auf behandelten Gesichtsbereichen</li>
+                                <li>Deodorant bei Achselbehandlung</li>
+                            </ul>
+                            <div class="warning-box">
+                                <p><strong>✋ Wichtig:</strong> Nicht kratzen, reiben oder die Haut anderweitig reizen!
+                                    Lassen Sie die Haare natürlich ausfallen.</p>
+                            </div>
+                            <span class="price-tag">💰 Preise: Ab 49€ (je nach Behandlungsbereich)</span>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Wie viele Sitzungen brauche ich?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die Anzahl der benötigten Sitzungen variiert je nach:</p>
+                            <ul>
+                                <li><strong>Körperbereich:</strong> Gesicht benötigt oft mehr Sitzungen als Beine</li>
+                                <li><strong>Haarfarbe:</strong> Dunkle Haare sprechen besser an als helle</li>
+                                <li><strong>Hauttyp:</strong> Hellere Haut mit dunklen Haaren zeigt schnellere
+                                    Ergebnisse
+                                </li>
+                                <li><strong>Hormonelle Faktoren:</strong> Können das Haarwachstum beeinflussen</li>
+                            </ul>
+                            <div class="highlight-box">
+                                <p><strong>Durchschnittlich:</strong> 6-8 Sitzungen im Abstand von 4-8 Wochen für
+                                    optimale
+                                    Ergebnisse. Manche Bereiche benötigen gelegentliche Auffrischungen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Ist die Behandlung schmerzhaft?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Die meisten Klienten beschreiben das Gefühl als:</p>
+                            <ul>
+                                <li>Leichtes Kribbeln oder Wärmegefühl</li>
+                                <li>Vergleichbar mit einem leichten Gummiband-Schnappen</li>
+                                <li>Deutlich weniger schmerzhaft als Wachsen oder Epilieren</li>
+                            </ul>
+                            <div class="success-box">
+                                <p><strong>Unsere modernen Diodenlaser</strong> verfügen über Kühlsysteme, die die Haut
+                                    während der Behandlung kühlen und das Unbehagen minimieren. Die meisten Klienten
+                                    empfinden die Behandlung als gut erträglich.</p>
+                            </div>
+                            <p><strong>Empfindlichkeit variiert je nach Bereich:</strong></p>
+                            <ul>
+                                <li>Weniger empfindlich: Beine, Arme, Rücken</li>
+                                <li>Empfindlicher: Bikinizone, Achseln, Gesicht</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THETA HEALING FAQ -->
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <span class="faq-category-icon">🌟</span>
+                        Theta Healing
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was ist Theta Healing?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Theta Healing ist eine Meditations- und Energieheilungstechnik, die Ihnen hilft, in einen
+                                tiefen Entspannungszustand (Theta-Gehirnwellenzustand) zu gelangen. In diesem Zustand
+                                können wir gemeinsam limitierende Glaubenssätze, emotionale Blockaden und negative
+                                Gedankenmuster identifizieren und transformieren.</p>
+                            <p>Der Theta-Zustand ist ein natürlicher Bewusstseinszustand, ähnlich dem Moment kurz vor
+                                dem
+                                Einschlafen oder während tiefer Meditation. In diesem Zustand ist Ihr Unterbewusstsein
+                                besonders zugänglich und offen für positive Veränderungen.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Wer kann Theta Healing anwenden?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Theta Healing ist für jeden Menschen geeignet, unabhängig von Alter, Hintergrund oder
+                                religiöser Überzeugung. Es ist besonders hilfreich für:</p>
+                            <ul>
+                                <li>Menschen mit emotionalen Belastungen (Stress, Angst, Trauer)</li>
+                                <li>Personen, die persönliches Wachstum anstreben</li>
+                                <li>Menschen mit chronischen Beschwerden (als Ergänzung zur medizinischen Behandlung)
+                                </li>
+                                <li>Alle, die ihre Intuition stärken möchten</li>
+                                <li>Menschen, die negative Glaubenssätze auflösen möchten</li>
+                                <li>Personen auf der Suche nach spiritueller Entwicklung</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was bewirkt Theta Healing?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Theta Healing kann eine Vielzahl positiver Veränderungen bewirken:</p>
+                            <ul>
+                                <li><strong>Emotionale Heilung:</strong> Auflösung emotionaler Blockaden und negativer
+                                    Glaubenssätze</li>
+                                <li><strong>Intuition:</strong> Stärkung der Intuition und des inneren Bewusstseins</li>
+                                <li><strong>Mentale Gesundheit:</strong> Reduzierung von Stress, Angst und Depression
+                                </li>
+                                <li><strong>Selbstwert:</strong> Förderung von Selbstvertrauen und Selbstwert</li>
+                                <li><strong>Traumaverarbeitung:</strong> Unterstützung bei der Verarbeitung von Traumata
+                                </li>
+                                <li><strong>Wohlbefinden:</strong> Verbesserung des allgemeinen Wohlbefindens</li>
+                                <li><strong>Manifestation:</strong> Hilfe bei der Manifestation persönlicher Ziele</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Bietet Theta Healing langfristige Heilung und Verbesserung?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ja! Viele Klienten berichten von tiefgreifenden, langanhaltenden Veränderungen:</p>
+                            <div class="highlight-box">
+                                <h4>Kurzfristige Effekte (1-3 Tage):</h4>
+                                <p>Energetische Verschiebungen wirken bis zu 3 Tage nach der Sitzung. Sie können eine
+                                    sofortige Erleichterung oder ein Gefühl der Befreiung verspüren.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <h4>Mittelfristige Integration (mehrere Wochen):</h4>
+                                <p>Positive Veränderungen integrieren sich über mehrere Wochen in Ihr Leben. Sie
+                                    bemerken
+                                    möglicherweise neue Verhaltensmuster und Reaktionen.</p>
+                            </div>
+                            <div class="highlight-box">
+                                <h4>Langfristige Transformation:</h4>
+                                <p>Neues Bewusstsein für Gedankenmuster und deren Einfluss auf Ihr Leben. Nachhaltige
+                                    Transformation bei regelmäßiger Anwendung. Viele Klienten berichten von dauerhaften
+                                    positiven Veränderungen in verschiedenen Lebensbereichen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Gibt es Risiken bei Theta Healing?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="warning-box">
+                                <p><strong>⚠️ Wichtiger Hinweis:</strong> Theta Healing ist KEIN Ersatz für medizinische
+                                    Behandlung! Es sollte immer ergänzend zur konventionellen Medizin angewendet werden.
+                                </p>
+                            </div>
+                            <p><strong>Wann sollten Sie vorsichtig sein:</strong></p>
+                            <ul>
+                                <li>Bei schweren psychischen Erkrankungen bitte vorher mit Ihrem Arzt sprechen</li>
+                                <li>Theta Healing ersetzt keine psychiatrische oder psychotherapeutische Behandlung</li>
+                                <li>Bei akuten medizinischen Notfällen wenden Sie sich bitte an einen Arzt</li>
+                            </ul>
+                            <div class="success-box">
+                                <p><strong>✅ Ansonsten gilt:</strong> Theta Healing ist eine sanfte, nicht-invasive
+                                    Methode
+                                    ohne körperliche Risiken. Es gibt keine bekannten Nebenwirkungen bei sachgemäßer
+                                    Anwendung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BIOENERGIE FAQ -->
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <span class="faq-category-icon">🌿</span>
+                        Bioenergie
+                    </h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was ist Bioenergie?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bioenergie (auch Bioenergetische Analyse genannt) ist ein körperpsychotherapeutisches
+                                Verfahren, das von Alexander Lowen entwickelt wurde. Es basiert auf der Erkenntnis, dass
+                                Körper und Seele eine Einheit bilden.</p>
+
+                            <div class="highlight-box">
+                                <h4>🔑 Kernkonzept:</h4>
+                                <p>Psychische Konflikte und unterdrückte Emotionen manifestieren sich in körperlichen
+                                    Blockaden und chronischen Muskelverspannungen. Diese "muskuläre Panzerung"
+                                    beeinträchtigt den freien Fluss der Lebensenergie (Bioenergie) durch den Körper.</p>
+                            </div>
+
+                            <p><strong>Ziel der Therapie:</strong> Durch die Kombination von Körperarbeit, Atemübungen
+                                und
+                                analytischem Gespräch werden diese Blockaden gelöst, sodass die Lebensenergie wieder
+                                frei
+                                fließen kann.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Für wen ist Bioenergie geeignet?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bioenergie ist für Menschen geeignet, die an der Verbindung von Körper und Psyche
+                                arbeiten
+                                möchten:</p>
+
+                            <h4>✅ Besonders hilfreich bei:</h4>
+                            <ul>
+                                <li><strong>Angststörungen und Depressionen:</strong> Lösung emotionaler Blockaden</li>
+                                <li><strong>Stress und Burnout:</strong> Abbau chronischer Anspannung</li>
+                                <li><strong>Traumata und PTBS:</strong> Verarbeitung belastender Erfahrungen</li>
+                                <li><strong>Beziehungsproblemen:</strong> Verbesserung zwischenmenschlicher Beziehungen
+                                </li>
+                                <li><strong>Chronischen Verspannungen:</strong> Lösung körperlicher Blockaden</li>
+                                <li><strong>Psychosomatischen Beschwerden:</strong> Behandlung körperlicher Symptome mit
+                                    psychischer Ursache</li>
+                                <li><strong>Persönlichkeitsentwicklung:</strong> Mehr Lebendigkeit und Selbstbewusstsein
+                                </li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>⚠️ Nicht geeignet bei:</strong></p>
+                                <ul>
+                                    <li>Akuten organischen Schäden</li>
+                                    <li>Nur bedingt in der Schwangerschaft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Wie läuft eine Bioenergie-Sitzung ab?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Eine Bioenergie-Sitzung kombiniert verschiedene Elemente für einen ganzheitlichen Ansatz:
+                            </p>
+
+                            <h4>📋 Ablauf einer Sitzung:</h4>
+
+                            <div class="highlight-box">
+                                <h4>1️⃣ Analyse & Beobachtung</h4>
+                                <p>Zu Beginn analysiere ich Ihre:</p>
+                                <ul>
+                                    <li>Körperhaltung und Körpersprache</li>
+                                    <li>Augen- und Gesichtsausdruck</li>
+                                    <li>Atmung und Energieniveau</li>
+                                    <li>Muskuläre Spannungsmuster</li>
+                                </ul>
+                            </div>
+
+                            <div class="highlight-box">
+                                <h4>2️⃣ Körperarbeit</h4>
+                                <ul>
+                                    <li><strong>Atemübungen:</strong> Vertiefung und Bewusstmachung der Atmung</li>
+                                    <li><strong>Gezielte Bewegungen:</strong> Lösung muskulärer Verspannungen</li>
+                                    <li><strong>Körperhaltungen:</strong> Aktivierung blockierter Energie</li>
+                                    <li><strong>Ausdrucksarbeit:</strong> Förderung des Gefühlsausdrucks</li>
+                                </ul>
+                            </div>
+
+                            <div class="highlight-box">
+                                <h4>3️⃣ Analytisches Gespräch</h4>
+                                <p>Verbindung der körperlichen Erfahrungen mit Ihrer persönlichen Geschichte, Gefühlen
+                                    und
+                                    Bedürfnissen. Bearbeitung innerer Konflikte und Muster.</p>
+                            </div>
+
+                            <div class="success-box">
+                                <p><strong>⏱️ Dauer:</strong> Eine Sitzung dauert 50-90 Minuten, je nach individuellem
+                                    Bedarf.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Was bewirkt Bioenergie?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bioenergie zielt darauf ab, den Energiefluss im Körper wiederherzustellen und emotionale
+                                sowie körperliche Blockaden zu lösen:</p>
+
+                            <h4>✨ Positive Wirkungen:</h4>
+                            <ul>
+                                <li><strong>Emotionale Heilung:</strong> Lösung tiefsitzender emotionaler Blockaden</li>
+                                <li><strong>Stressabbau:</strong> Reduzierung von Stress, Angst und innerer Anspannung
+                                </li>
+                                <li><strong>Mehr Lebensenergie:</strong> Verbesserung des Energieflusses und der
+                                    Vitalität
+                                </li>
+                                <li><strong>Körperliche Entspannung:</strong> Lösung chronischer Muskelverspannungen
+                                </li>
+                                <li><strong>Selbstbewusstsein:</strong> Stärkung des Selbstwerts und der
+                                    Selbstwahrnehmung
+                                </li>
+                                <li><strong>Lebendigkeit:</strong> Mehr Freude, Ausdruckskraft und Lebensqualität</li>
+                                <li><strong>Beziehungsverbesserung:</strong> Besserer Zugang zu Gefühlen und
+                                    Bedürfnissen
+                                </li>
+                            </ul>
+
+                            <div class="success-box">
+                                <h4>🌱 Langfristige Transformation:</h4>
+                                <p>Durch regelmäßige Sitzungen können Sie:</p>
+                                <ul>
+                                    <li>Alte Verhaltensmuster erkennen und verändern</li>
+                                    <li>Ihre Selbstregulation auf psychischer und körperlicher Ebene verbessern</li>
+                                    <li>Zu mehr innerer Freiheit und Authentizität finden</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Gibt es Risiken bei Bioenergie?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="success-box">
+                                <p><strong>✅ Generell sehr sicher!</strong> Bioenergie ist eine sanfte, nicht-invasive
+                                    Methode. Die Risiken sind minimal, wenn die Therapie von qualifizierten Therapeuten
+                                    durchgeführt wird.</p>
+                            </div>
+
+                            <h4>Mögliche vorübergehende Reaktionen:</h4>
+                            <ul>
+                                <li><strong>Müdigkeit oder Erschöpfung:</strong> Nach einer Sitzung kann vorübergehende
+                                    Müdigkeit auftreten - dies ist ein normaler Teil des Heilungsprozesses</li>
+                                <li><strong>Emotionale Reaktionen:</strong> Beim Lösen von Blockaden können Emotionen
+                                    hochkommen</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>⚠️ Wichtige Hinweise:</strong></p>
+                                <ul>
+                                    <li><strong>Kein Ersatz für medizinische Behandlung:</strong> Bioenergie sollte
+                                        ergänzend zur konventionellen Medizin angewendet werden</li>
+                                    <li><strong>Nicht erstattungsfähig:</strong> Die Kosten werden von gesetzlichen
+                                        Krankenkassen in Deutschland nicht übernommen</li>
+                                    <li><strong>Wissenschaftliche Anerkennung:</strong> Die Wirksamkeit ist
+                                        wissenschaftlich
+                                        noch nicht vollständig belegt</li>
+                                    <li><strong>Bei schweren psychischen Erkrankungen:</strong> Bitte sprechen Sie
+                                        vorher
+                                        mit Ihrem Arzt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="glass" style="padding: 40px; text-align: center; margin-top: 60px;">
+                    <h2 style="margin-bottom: 20px;">Noch Fragen?</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">
+                        Kontaktieren Sie uns gerne über Telegram oder buchen Sie direkt einen Beratungstermin.
+                    </p>
+                    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://t.me/LichtharmonieChat_bot" target="_blank" class="btn btn-secondary"
+                            style="border: 1px solid var(--secondary);">
+                            <i class="fab fa-telegram" style="margin-right: 10px;"></i>Telegram Kontakt
+                        </a>
+                        <a href="index.html#booking" class="btn btn-primary">
+                            <i class="fas fa-calendar" style="margin-right: 10px;"></i>Termin buchen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+
+    <!-- Re-refined Footer -->
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container" style="text-align: center;">
+
+
+            <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31
+                    21</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                    info@lichtharmonie.at</p>
+            </div>
+
+            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+                <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="impressum.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+                <a href="agb.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB
+                    &
+                    Datenschutz</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy;
+                2026
+                LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+                <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                    Handcrafted by <a href="https://www.fatdesign.at"
+                        style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                        Klavun</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Butterfly Cursor Follower -->
+    <div id="butterfly-follower">
+        <svg viewBox="0 0 100 100">
+            <g class="wing-left">
+                <path d="M50 50 C20 20 10 40 10 50 C10 60 20 80 50 50" />
+                <path d="M50 50 C30 40 25 55 50 50" />
+            </g>
+            <g class="wing-right">
+                <path d="M50 50 C80 20 90 40 90 50 C90 60 80 80 50 50" />
+                <path d="M50 50 C70 40 75 55 50 50" />
+            </g>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

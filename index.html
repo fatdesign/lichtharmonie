@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LICHTHARMONIE by Aksu | High-End Cosmetic & Soul Healing</title>
+    <meta name="description"
+        content="Professionelle Laserhaarentfernung & Spiritualität in Harmonie. Theta Healing, Klangtherapie und Energiearbeit bei LICHTHARMONIE by Aksu.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="LICHTHARMONIE by Aksu | High-End Cosmetic & Soul Healing">
+    <meta property="og:description"
+        content="Professionelle Laserhaarentfernung & Spiritualität in Harmonie. Theta Healing, Klangtherapie und Energiearbeit.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/aksu.jpeg"> <!-- Placeholder Image -->
+    <meta property="og:url" content="https://lichtharmonie.at">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+
+    <!-- Performance Preload -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        as="style">
+    <link rel="preload" href="image/hero-bg.jpg" as="image"> <!-- Adjust if hero image differs -->
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; left: -100px;"></div>
+    <div class="soul-bg-blob"
+        style="top: 40%; right: -200px; background: radial-gradient(circle, rgba(44,62,80,0.05) 0%, transparent 70%);">
+    </div>
+    <div class="soul-bg-blob"
+        style="bottom: 10%; left: -100px; background: radial-gradient(circle, rgba(157,125,101,0.08) 0%, transparent 70%);">
+    </div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a>
+                </li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay (Full Screen Floating) -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+        <button class="mobile-menu-close-floating" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <main id="main-content">
+        <!-- Ultra Hero Section -->
+        <section id="home" class="hero">
+            <div class="container scale-up">
+                <div class="hero-content">
+                    <h1>Licht & Harmonie <br>für Ihr wahres Ich</h1>
+                    <p>Klinische Präzision trifft auf seelische Tiefenarbeit. Erleben Sie modernste Technologie und
+                        transformative Energiearbeit in einer Atmosphäre purer Exzellenz.</p>
+                    <div class="flex" style="margin-top: 20px;">
+                        <a href="#services" class="btn btn-primary">Services entdecken</a>
+                        <a href="#booking" class="btn btn-secondary">Termin anfragen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Bento Grid -->
+        <section id="services" class="section">
+            <div class="container">
+                <div style="text-align: left; max-width: 800px; margin-bottom: 80px;">
+                    <h2 style="font-size: var(--h2-size); margin-bottom: 20px;">Exklusive Erfahrungen</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-muted);">Wir vereinen das Beste aus zwei Welten:
+                        Wissenschaftliche Perfektion für Ihren Körper und energetische Heilung für Ihre Seele.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Laser: Large visual header -->
+                    <div class="bento-item large glass" onclick="window.location.href='laser.html'"
+                        style="cursor: pointer;">
+                        <div class="bento-img-header" style="height: 350px;">
+                            <img src="../image/hair 1.jpeg" alt="High-End Diodenlaser">
+                        </div>
+                        <div>
+                            <h3>High-End Diodenlaser</h3>
+                            <p>Dauerhafte Haarentfernung auf medizinischem Niveau. Schmerzarm, sicher und präzise für
+                                alle
+                                Hauttypen. Erleben Sie das Gefühl von Freiheit und samtgeschmeidiger Haut.</p>
+                            <a href="laser.html" class="btn btn-secondary"
+                                style="margin-top: 20px; padding: 10px 20px; font-size: 0.8rem;">Details ansehen</a>
+                        </div>
+                    </div>
+
+                    <!-- Featured: Theta Healing -->
+                    <div class="bento-item glass bento-featured" onclick="window.location.href='theta.html'"
+                        style="cursor: pointer;">
+                        <div class="bento-img-header" style="height: 200px;">
+                            <img src="../image/theta 1.jpeg" alt="Theta Healing">
+                        </div>
+                        <h3>Theta Healing</h3>
+                        <p>Tiefe Transformation durch Zugriff auf das Unterbewusstsein. Lösen Sie Blockaden und
+                            entfalten
+                            Sie Ihr volles Potenzial.</p>
+                        <a href="theta.html"
+                            style="color: var(--primary); font-weight: 600; margin-top: 15px; display: inline-block;">Mehr
+                            erfahren →</a>
+                    </div>
+
+                    <!-- Tall: Beauty & Care -->
+                    <div class="bento-item tall glass">
+                        <div class="bento-img-header" style="height: 400px; margin-bottom: 30px;">
+                            <img src="../image/hair 2.jpeg" alt="Beauty Details">
+                        </div>
+                        <h3>Beauty & Care</h3>
+                        <p>Individuelle Konzepte für Ihre natürliche Ausstrahlung.</p>
+                    </div>
+
+                    <!-- Standard Items (Text only for balance) -->
+                    <div class="bento-item glass" id="sound-therapy-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Klangtherapie</h3>
+                        <p>Heilende Frequenzen regenerieren Ihre Zellen. Erleben Sie tiefe Entspannung.</p>
+                    </div>
+
+                    <div class="bento-item glass" onclick="window.location.href='bioenergie.html'"
+                        style="cursor: pointer;">
+                        <i class="fas fa-sun"></i>
+                        <h3>Energiearbeit</h3>
+                        <p>Aura-Reinigung und energetische Balance. Stärken Sie Ihre Vitalkräfte.</p>
+                    </div>
+
+                    <div class="bento-item glass">
+                        <i class="fas fa-fingerprint"></i>
+                        <h3>Individuelle Analyse</h3>
+                        <p>Maßgeschneiderte Ansätze für Ihre persönliche Transformation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soul Section / Branding -->
+        <section class="section soul-section">
+            <div class="soul-bg-blob" style="top: 20%; left: 30%;"></div>
+            <div class="container">
+                <div class="glass" style="padding: var(--space-lg); text-align: center;">
+                    <h2 style="font-size: 2.8rem; margin-bottom: 25px;">Ihre Reise zur Harmonie</h2>
+                    <p style="max-width: 700px; margin: 0 auto; font-size: 1.2rem;">Begleitet von Aksu finden Sie in
+                        unseren Räumlichkeiten einen Ort der Ruhe, der Heilung und der ästhetischen Perfektion.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Booking -->
+        <section id="booking" class="section">
+            <div class="container">
+                <div class="glass flex no-tilt" style="align-items: stretch; overflow: hidden; padding: 0;">
+                    <div
+                        style="flex: 1; padding: var(--space-lg); background: rgba(26, 42, 58, 0.02); display: flex; flex-direction: column; justify-content: center;">
+                        <h2 style="font-size: 3rem;">Bereit für die <br>Transformation?</h2>
+                        <p style="margin: 30px 0; font-size: 1.1rem; color: var(--text-muted);">Sichern Sie sich Ihren
+                            exklusiven Termin einfach via Telegram oder über unser Formular.</p>
+                        <div style="margin-top: 20px;">
+                            <a href="https://t.me/LichtharmonieChat_bot" target="_blank" class="btn btn-secondary"
+                                style="border: 1px solid var(--secondary);"><i class="fab fa-telegram"
+                                    style="margin-right: 10px;"></i> Telegram Kontakt</a>
+                        </div>
+                    </div>
+                    <div style="flex: 1.2; padding: var(--space-lg);">
+                        <form class="booking-form" id="bookingForm">
+                            <div class="form-group">
+                                <label for="name">Vorname & Nachname</label>
+                                <input type="text" id="name" name="name" placeholder="Wie dürfen wir Sie nennen?"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefonnummer</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Für Rückfragen (z.B. +49...)"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Gewünschter Service</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Service auswählen...</option>
+                                    <option value="Laser">Laserhaarentfernung</option>
+                                    <option value="Soul">Seelenarbeit (Theta, Klang, Energie)</option>
+                                    <option value="Kombi">Kombi-Erfahrung</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Bevorzugtes Datum</label>
+                                <input type="datetime-local" id="date" name="date" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Jetzt
+                                buchen</button>
+                        </form>
+                        <div id="formStatus"
+                            style="margin-top: 20px; text-align: center; display: none; padding: 15px; border-radius: 12px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Re-refined Footer -->
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container" style="text-align: center;">
+
+
+            <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31 21</p>
+                <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                    info@lichtharmonie.at</p>
+            </div>
+
+            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+                <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                    onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="impressum.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+                <a href="agb.html"
+                    style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB &
+                    Datenschutz</a>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy; 2026
+                LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+                <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                    Handcrafted by <a href="https://www.fatdesign.at"
+                        style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                        Klavun</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Butterfly Cursor Follower -->
+    <div id="butterfly-follower">
+        <svg viewBox="0 0 100 100">
+            <g class="wing-left">
+                <path d="M50 50 C20 20 10 40 10 50 C10 60 20 80 50 50" />
+                <path d="M50 50 C30 40 25 55 50 50" />
+            </g>
+            <g class="wing-right">
+                <path d="M50 50 C80 20 90 40 90 50 C90 60 80 80 50 50" />
+                <path d="M50 50 C70 40 75 55 50 50" />
+            </g>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Mich | LICHTHARMONIE by Aksu</title>
+    <meta name="description"
+        content="Lernen Sie Aksu kennen - Die Visionärin hinter LICHTHARMONIE. Verbindung von klinischer Kosmetik und spiritueller Heilung.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Sharing -->
+    <meta property="og:title" content="Über Mich | LICHTHARMONIE by Aksu">
+    <meta property="og:description"
+        content="Lerne Aksu kennen - Deine Expertin für dauerhafte Haarentfernung und energetische Heilung in Wien.">
+    <meta property="og:image" content="https://lichtharmonie.at/image/aksu.jpeg">
+    <meta property="og:url" content="https://lichtharmonie.at/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon & Icons -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Interactive Glitter Background -->
+    <canvas id="glitterCanvas"></canvas>
+
+    <!-- Background Auras -->
+    <div class="soul-bg-blob" style="top: -100px; left: -100px;"></div>
+    <div class="soul-bg-blob"
+        style="top: 20%; right: -200px; background: radial-gradient(circle, rgba(157,125,101,0.08) 0%, transparent 70%);">
+    </div>
+
+    <nav id="navbar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" id="brand-logo">
+                <img src="icon/logo.PNG" id="brand-logo-img" alt="Lichtharmonie by Aksu">
+            </a>
+            <ul class="nav-links desktop-only">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laser.html">Laser</a></li>
+                <li><a href="theta.html">Theta Healing</a></li>
+                <li><a href="bioenergie.html">Bioenergie</a></li>
+                <li><a href="about.html">Über Mich</a></li>
+                <li><a href="social.html">Instagram</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary"
+                        style="padding: 12px 30px; font-size: 0.7rem;">Termin</a></li>
+                <li>
+                    <button id="zenToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%; margin-right: 10px;" title="Zen Musik an/aus">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </li>
+                <li><button id="themeToggle" class="btn btn-secondary"
+                        style="padding: 10px 15px; border-radius: 50%;"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars" style="font-size: 1.2rem; color: var(--secondary);"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <ul class="mobile-links">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="laser.html" class="mobile-link">Laser</a></li>
+                <li><a href="theta.html" class="mobile-link">Theta Healing</a></li>
+                <li><a href="bioenergie.html" class="mobile-link">Bioenergie</a></li>
+                <li><a href="about.html" class="mobile-link">Über Mich</a></li>
+                <li><a href="social.html" class="mobile-link">Instagram</a></li>
+                <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+                <li><a href="index.html#booking" class="btn btn-primary mobile-link" style="margin-top: 20px;">Termin
+                        anfragen</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- About Content -->
+        <section class="hero" style="align-items: flex-start; padding-top: 150px; padding-bottom: 120px;">
+            <div class="container scale-up">
+                <div class="glass flex soft-tilt about-card">
+                    <!-- Image Placeholder -->
+                    <div class="about-image" style="background-image: url('image/aksu.jpeg');">
+                    </div>
+
+                    <!-- Text Content -->
+                    <div style="flex: 1; padding: var(--space-lg);">
+                        <h4
+                            style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: var(--primary); margin-bottom: 20px;">
+                            Die Visionärin</h4>
+                        <h1 style="font-size: 3rem; margin-bottom: 30px; line-height: 1.1;">Aksu</h1>
+
+                        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px;">
+                            Mein Weg ist alles – nur nicht langweilig.
+                        </p>
+
+                        <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;">
+                            Nach dem Abschluss der Handelsschule und der Matura am Gymnasium war ich zunächst im
+                            kaufmännischen Bereich tätig. Struktur, Organisation und Zahlen? Kann ich. Doch irgendwann
+                            habe ich gemerkt: Da geht noch mehr.
+                        </p>
+
+                        <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;">
+                            Meine Neugier hat mich weitergeführt – hin zu meiner großen Leidenschaft für Kosmetik,
+                            insbesondere die dauerhafte Haarentfernung mit dem Diodenlaser, und zur Humanenergetik. Eine
+                            Kombination aus moderner Technik und ganzheitlichem Denken, die mich sofort begeistert hat.
+                            Denn wahre Schönheit und Wohlbefinden entstehen nicht nur an der Oberfläche, sondern im
+                            Zusammenspiel von Körper, Geist und Energie.
+                        </p>
+
+                        <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;">
+                            Heute verbinde ich mein wirtschaftliches Know-how mit Einfühlungsvermögen, Präzision und dem
+                            Wunsch, Menschen dabei zu unterstützen, sich wohl, selbstbewusst und ganz bei sich zu
+                            fühlen. Professionell, ehrlich – und immer mit einer Prise Humor. Denn Lächeln wirkt
+                            bekanntlich auch ohne Laser 😉
+                        </p>
+
+                        <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 20px;">
+                            Meine Community und meine Kund:innen stehen für mich im Mittelpunkt. Ich glaube an echte
+                            Begegnungen, transparente Arbeit und daran, dass man Großes erreichen kann, wenn man mit
+                            Leidenschaft dabei ist.
+                        </p>
+
+                        <p
+                            style="font-size: 1.1rem; color: var(--primary); font-family: 'Playfair Display', serif; margin-bottom: 30px;">
+                            Schön, dass du hier bist 🤍
+                        </p>
+
+                        <div class="flex">
+                            <div style="text-align: center;">
+                                <span
+                                    style="font-size: 2rem; display: block; font-family: 'Playfair Display', serif; color: var(--primary);">10+</span>
+                                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Jahre
+                                    Erfahrung</span>
+                            </div>
+                            <div
+                                style="text-align: center; border-left: 1px solid rgba(0,0,0,0.1); padding-left: 20px;">
+                                <span
+                                    style="font-size: 2rem; display: block; font-family: 'Playfair Display', serif; color: var(--primary);">∞</span>
+                                <span
+                                    style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Leidenschaft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer style="padding: 80px 0 40px; background: var(--bg-light); border-top: 1px solid rgba(0,0,0,0.05);">
+
+
+        <div style="margin-bottom: 30px; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+            <p><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +43 650 905 31
+                21</p>
+            <p><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
+                info@lichtharmonie.at</p>
+        </div>
+
+        <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 30px;">
+            <a href="https://www.instagram.com/lichtharmonie_byaksu/" target="_blank" rel="noopener noreferrer"
+                style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/LichtharmonieChat_bot" target="_blank" rel="noopener noreferrer"
+                style="color: var(--secondary); font-size: 1.8rem; transition: var(--transition-fast);"
+                onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--secondary)'">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+        <div class="footer-links" style="margin-bottom: 20px;">
+            <a href="impressum.html"
+                style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">Impressum</a>
+            <a href="agb.html"
+                style="color: var(--text-muted); margin: 0 10px; text-decoration: none; font-size: 0.9rem;">AGB
+                &
+                Datenschutz</a>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px; opacity: 0.6;">&copy;
+            2026
+            LICHTHARMONIE BY AKSU. ALL RIGHTS RESERVED.<br>
+            <span style="font-size: 0.75rem; opacity: 0.7; margin-top: 10px; display: inline-block;">Webdesign
+                Handcrafted by <a href="https://www.fatdesign.at"
+                    style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;">Fatih
+                    Klavun</a></span>
+        </p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
