@@ -3,7 +3,7 @@
  */
 
 // --- 0. Configurations ---
-const TELEGRAM_TOKEN = '8452257230:AAGb4Vd8L3D5jjfMl2njZtWF0_gox6Y11gY';
+const TELEGRAM_TOKEN = 'xxx';
 const TELEGRAM_CHAT_ID = '1917004037';
 
 // --- 1. Global Managers (Persistent) ---
@@ -508,5 +508,6 @@ window.onload = () => {
     initPageFeatures();
     window.spa = new SPAEngine();
 };
+
 
 
